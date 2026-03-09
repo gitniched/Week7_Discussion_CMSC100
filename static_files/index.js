@@ -51,16 +51,17 @@ function addItem(anime){
     newAnime.setAttribute("class","anime");
    
     animesList.appendChild(newAnime);
-    animesList.appendChild(delBtn); 
+    newAnime.appendChild(delBtn);
+
+    delBtn.addEventListener("click", () => {
+        animesList.removeChild(newAnime);
+    })
     
 }
 
 function addAnime(){
     var animeInput = document.getElementById("animeInput")
     var animeValue = animeInput.value;
-    
-    var delBtn = document.createElement("button")
-    delBtn.innerText = "Remove";
     addItem(animeValue);
 
     
@@ -69,9 +70,7 @@ function addAnime(){
 
 function removeAnime(anime){
     var animesList = document.getElementById("animesList")
-    var anime = document.getElementById(`${anime}`)
-
-    animesList.removeChild(`${anime}`);
+    
 
 
 }
