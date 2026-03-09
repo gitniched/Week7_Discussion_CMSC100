@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/index.css">
+    <title>Front End Scripting</title>
+</head>
+<body>
+    
+    <img height="100px" 
+    src = "https://i1.sndcdn.com/artworks-YDQOy2Pru5CA2rhs-x1uzgA-t1080x1080.jpg";
+    alt = tung>
+
+    <div class="field" id="addAnime">
+        <p1 class="text" id="textAnime">
+            Anime:
+        </p1>
+        <input type="text" id="animeInput">
+        <button onclick="addAnime()"> Add </button>
+    </div>
+    <div class="container" id="animeContainer">
+        <h3 class="list" id="animesHeader">
+            ANIMES
+            </h3>
+            <ol class ="list" id="animesList"> 
+                <li id="aot" class="anime">AOT <button onclick="removeAnime(aot)"> Remove</button> </li>
+                <li id="jjk" class="anime">JJK <button> Remove</button></li>
+                <li id="frieren" class="anime">Frieren <button> Remove</button></li>
+                <li id="vinlandSaga" class="anime">Vinland Sage <button> Remove</button></li>
+
+            </ol>
+    </div>
+
+    <div class="container" id="gamesContainer">
+        <h3 class="list" id="gamesHeader">
+            GAMES
+            </h3>
+            <ul class ="list" id="gamesList"> 
+                <li id="aot" class="game">AOT</li>
+                <li id="jjk" class="game">JJK</li>
+                <li id="frienren" class="game">Frieren</li>
+                <li id="vinlandSaga" class="game">Vinland Sage</li>
+            </ul>
+    </div>
+    <script src="http://localhost:3000/index.js"></script>
+    <script src="http://localhost:3000/dom-script.js"></script>
+</body>
+</html>

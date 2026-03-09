@@ -1,0 +1,18 @@
+.header{
+    font-size: x-large;
+}
+
+.game, .anime {
+    color: black;
+    background-color: white;
+}
+
+.game:hover, .anime:hover{
+    transition: 500ms;
+    color: white;
+    background-color: black;
+}
+
+.addingClasses{
+    color:red;
+}
